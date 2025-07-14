@@ -10,8 +10,8 @@ playersForm.addEventListener("submit", function (e) {
   e.preventDefault();
 
   // get player names
-  player1 = document.getElementById("player-1").value.trim();
-  player2 = document.getElementById("player-2").value.trim();
+  player1 = document.getElementById("player1").value.trim();
+  player2 = document.getElementById("player2").value.trim();
 
   // switch screens
   document.getElementById("player-setup-screen").style.display = "none";
