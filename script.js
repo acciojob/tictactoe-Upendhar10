@@ -37,9 +37,9 @@ gridCells.forEach((cell) => {
     if (cell.textContent != "") return;
 
     if (isPlayer1Turn) {
-      cell.textContent = "X";
+      cell.textContent = "x";
       // check if player 1 wins
-      if (checkWinner("X", winningCombos)) {
+      if (checkWinner("x", winningCombos)) {
         document.querySelector(".message").textContent = `${player1} congratulations you won!`;
         return; // stop further moves
       } else {
@@ -48,9 +48,9 @@ gridCells.forEach((cell) => {
         ).textContent = `${player2}, you're up`;
       }
     } else {
-      cell.textContent = "O";
+      cell.textContent = "o";
       // check if player 2 wins
-      if (checkWinner("O", winningCombos)) {
+      if (checkWinner("o", winningCombos)) {
         document.querySelector(".message").textContent = `${player2} congratulations you won!`;
         return;
       } else {
