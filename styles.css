@@ -1,1 +1,101 @@
 /*  your css code here. If applicable */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  display: grid;
+  place-content: center;
+}
+
+.container {
+  min-width: 600px;
+  /* border: 2px solid black; */
+  padding: 2rem;
+
+  display: grid;
+  place-content: center;
+}
+
+.container h1,
+p {
+  text-align: center;
+  margin-block: 1rem;
+}
+
+.container form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.container form label {
+  font-weight: bold;
+  font-size: 1.25rem;
+}
+
+form input {
+  min-width: 250px;
+  padding: 0.5rem;
+  border-radius: 0.25rem;
+  border: 1px solid #ccc;
+}
+
+form input[type="submit"] {
+  width: 250px;
+  margin: 0 auto;
+  padding: 0.5rem;
+  border-radius: 0.25rem;
+  border: 1px solid #ccc;
+  cursor: pointer;
+}
+
+form input[type="submit"]:hover {
+  background-color: lightblue;
+  cursor: pointer;
+}
+
+.container #player-setup-screen {
+  display: block;
+}
+
+.container #game-board-screen {
+  display: none;
+}
+
+.container #board {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 0.25rem;
+  margin-block: 1rem;
+}
+
+.container .cell {
+  border: 1px solid #ccc;
+  width: 80px;
+  height: 80px;
+  cursor: pointer;
+  font-size: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0.25rem;
+}
+
+.container button {
+  margin-block: 1rem;
+  min-width: 250px;
+  padding: 0.5rem;
+  border-radius: 0.25rem;
+  border: 1px solid #ccc;
+  cursor: pointer;
+}

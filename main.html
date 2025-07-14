@@ -1,16 +1,48 @@
 <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tic Tac Toe | AccioJob</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Player Setup -->
+    <div class="container">
+      <h1>TIC TAC TOE</h1>
 
-<html>
+      <!-- Players Setup -->
+      <div id="player-setup-screen">
+        <form action="POST" id="players-form">
+          <label for="player1">
+            PLAYER 1:
+            <input type="text" id="player-1" name="player1" required />
+          </label>
+          <label for="player2">
+            PLAYER 2 :
+            <input type="text" id="player-2" name="player2" required />
+          </label>
+          <input type="submit" value="Start Game" id="submit" />
+        </form>
+      </div>
 
-<head>
-	<link rel="stylesheet" href="styles.css">
-</head>
-
-<body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
-
-</body>
-
+      <!-- Game -->
+      <div id="game-board-screen">
+        <p class="message"></p>
+        <div id="board">
+          <div class="cell" id="1" data-cell></div>
+          <div class="cell" id="2" data-cell></div>
+          <div class="cell" id="3" data-cell></div>
+          <div class="cell" id="4" data-cell></div>
+          <div class="cell" id="5" data-cell></div>
+          <div class="cell" id="6" data-cell></div>
+          <div class="cell" id="7" data-cell></div>
+          <div class="cell" id="8" data-cell></div>
+          <div class="cell" id="9" data-cell></div>
+        </div>
+      </div>
+    </div>
+    <!-- Javascript -->
+    <script src="script.js"></script>
+  </body>
 </html>
